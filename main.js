@@ -42,3 +42,19 @@ nextButton.addEventListener("click", function () {
   currentCardIndex = (currentCardIndex + 1) % cards.length;
   showCard(currentCardIndex);
 });
+
+// message code
+
+const textarea = document.getElementById("textarea");
+const counter = document.getElementById("counter");
+const maxLength = parseInt(textarea.getAttribute("maxlength"));
+
+textarea.addEventListener("input", function () {
+  const remainingChars = maxLength - textarea.value.length;
+  counter.textContent = " متبقي لك:" + remainingChars;
+
+  if (remainingChars <= 0) {
+    textarea.value = textarea.value.slice(0, maxLength);
+    counter.textContent = "انتهت الاحرف!";
+  }
+});

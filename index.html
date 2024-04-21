@@ -128,6 +128,38 @@
       <button id="prevButton"><img src="left-arrow.png" alt="" /></button>
       <button id="nextButton"><img src="rigth-arrowpng.png" alt="" /></button>
     </div>
+    <main class="contact-us">
+      <h1 class="contact-title">تواصل معنا</h1>
+      <form action="" class="contact-form">
+        <div class="name-sec">
+          <div class="name">
+            <label for="name">اسمك بالكامل</label>
+            <input type="text" name="name" placeholder="Enter your name" />
+          </div>
+          <div class="name">
+            <label for="email">حساب الايميل</label>
+            <input
+              type="email"
+              placeholder="Enter your email addrees"
+              name="email"
+            />
+          </div>
+        </div>
+        <div class="message">
+          <label for="message">اترك رسالتك هنا</label>
+          <textarea
+            name="message"
+            id="textarea"
+            cols="30"
+            rows="5"
+            placeholder="Enter your message"
+            maxlength="500"
+          ></textarea>
+          <div id="counter">متبقي لك: <span>500</span></div>
+        </div>
+        <button class="send-btn">ارسال</button>
+      </form>
+    </main>
 
     <script src="main.js"></script>
   </body>

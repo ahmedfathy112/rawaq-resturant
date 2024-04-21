@@ -275,7 +275,7 @@ body {
 }
 #navigation {
   position: absolute;
-  bottom: 5%;
+  bottom: 20%;
   right: 250px;
 }
 #prevButton,
@@ -289,6 +289,82 @@ body {
   border: none;
 }
 /* end pofeey */
+/* start contact-us */
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 40px;
+}
+.contact-title {
+  text-align: left;
+}
+form .name-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.name-sec .name {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.name label {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.7;
+  margin: 15px 0;
+}
+.name input {
+  padding: 7px 15px;
+  width: 400px;
+  border: none;
+  border-bottom: 2px solid;
+  outline: none;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+.message label {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.7;
+  margin: 15px 0;
+}
+.message textarea {
+  width: 40%;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid;
+  height: 150px;
+}
+.send-btn {
+  border: none;
+  background-color: orange;
+  color: #ecf8f8;
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#counter {
+  margin-top: 12px;
+}
+#counter span {
+  color: red;
+}
+/* end contact-us */
 /* start medeia query */
 @media screen and (max-width: 767px) {
   body {
@@ -317,14 +393,20 @@ body {
   }
   .about-us {
     flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
   }
   .about-images .img2 {
-    bottom: -749px;
-    left: 228px;
+    bottom: -689px;
+    left: 159px;
   }
   .about-images .img4 {
-    bottom: -289px;
-    right: -264px;
+    bottom: -255px;
+    right: -250px;
+  }
+  .about-images .img3 {
+    top: 65px;
+    left: -50px;
   }
   .about-images .img1 {
     top: 548px;
@@ -351,8 +433,14 @@ body {
     margin-top: 0 !important;
   }
   #navigation {
-    bottom: 2%;
+    bottom: 11.5%;
     right: 226px;
+  }
+  .name-sec {
+    flex-wrap: wrap;
+  }
+  .message textarea {
+    width: 90%;
   }
 }
 /* end medeia query */
