@@ -368,10 +368,14 @@ form .name-sec {
 /* start medeia query */
 @media screen and (max-width: 767px) {
   body {
-    width: 140vw;
+    width: 100%;
+  }
+  .logo img {
+    width: 60px;
   }
   .hero-sec {
     flex-direction: column;
+    width: 100%;
   }
   .circl-hero {
     right: -0%;
@@ -388,8 +392,14 @@ form .name-sec {
   .hero-images img {
     width: 100%;
   }
+  .best-cards {
+    flex-direction: column;
+  }
   .best-cards .card2 {
     transform: translateY(0);
+  }
+  .best-cards .card {
+    margin: 20px auto;
   }
   .about-us {
     flex-wrap: wrap;
@@ -397,23 +407,29 @@ form .name-sec {
     margin: auto;
   }
   .about-images .img2 {
-    bottom: -689px;
-    left: 159px;
+    bottom: -418px;
+    left: 183px;
+    width: 160px;
   }
   .about-images .img4 {
-    bottom: -255px;
-    right: -250px;
+    bottom: -168px;
+    right: -187px;
+    width: 160px;
   }
   .about-images .img3 {
     top: 65px;
-    left: -50px;
+    left: -3px;
+    width: 160px;
   }
   .about-images .img1 {
-    top: 548px;
+    top: 333px;
     left: 4px;
+    width: 160px;
   }
   #cardContainer {
-    margin-top: 130%;
+    width: 95%;
+    margin: auto;
+    margin-top: 350px;
   }
   .card-swip {
     width: 90% !important;
@@ -433,11 +449,14 @@ form .name-sec {
     margin-top: 0 !important;
   }
   #navigation {
-    bottom: 11.5%;
-    right: 226px;
+    bottom: 13.5%;
+    right: 39%;
   }
   .name-sec {
     flex-wrap: wrap;
+  }
+  .name input {
+    width: 320px;
   }
   .message textarea {
     width: 90%;
