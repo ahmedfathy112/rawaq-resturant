@@ -377,6 +377,9 @@ form .name-sec {
     flex-direction: column;
     width: 100%;
   }
+  .hero-contant h1 {
+    font-size: 42px;
+  }
   .circl-hero {
     right: -0%;
     overflow-y: hidden;
@@ -408,7 +411,7 @@ form .name-sec {
   }
   .about-images .img2 {
     bottom: -418px;
-    left: 183px;
+    left: 160px;
     width: 160px;
   }
   .about-images .img4 {
@@ -429,7 +432,7 @@ form .name-sec {
   #cardContainer {
     width: 95%;
     margin: auto;
-    margin-top: 350px;
+    margin-top: 450px;
   }
   .card-swip {
     width: 90% !important;
@@ -449,7 +452,7 @@ form .name-sec {
     margin-top: 0 !important;
   }
   #navigation {
-    bottom: 13.5%;
+    bottom: 11%;
     right: 39%;
   }
   .name-sec {
